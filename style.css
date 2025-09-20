@@ -1,16 +1,18 @@
-/* General page styles */
 body {
   font-family: "Times New Roman", Times, serif;
   font-size: 20px;
   line-height: 1.5;
   margin: 0;
   padding: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  background-color: #fff;
 }
 
-/* Header styles */
+main {
+  max-width: 600px;
+  margin: 0 auto; /* centers the whole block */
+  padding: 20px;
+  text-align: left;
+}
 header {
   text-align: center;
   margin-top: 40px;
@@ -18,34 +20,52 @@ header {
 }
 
 header h1 {
+  font-size: 2rem;
   letter-spacing: 4px;
   text-transform: uppercase;
-  font-size: 2rem;
-  margin: 0;
+  margin: 0 0 10px 0; /* Add bottom margin */
 }
 
 header h2 {
+  font-size: 1.2rem;
   color: #006EB6;
   letter-spacing: 2px;
   text-transform: uppercase;
-  margin: 10px 0 0 0;
-  font-size: 1.2rem;
+  margin: 0;
 }
-
-/* Main content styles */
 main {
-  max-width: 600px;
-  padding: 20px;
-  text-align: left;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 6px;
 }
-
-/* Footer with logo */
+footer {
+  text-align: center;
+}
+footer img {
+  max-width: 100%;
+  width: 150px;
+  height: auto;
+}
+footer {
+  border-top: 1px solid #ccc;
+  margin-top: 40px;
+  padding: 20px;
+  text-align: center;
+}
+footer img:hover {
+  opacity: 0.85;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
 footer {
   margin-top: 40px;
   padding: 20px;
+  text-align: center;
+  border-top: 1px solid #ccc; /* optional */
 }
 
 footer img {
   width: 150px;
+  max-width: 100%;
   height: auto;
 }
